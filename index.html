@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>World Bank</title>
+</head>
+<body>
+<div class="info">
+    <img src="Emblem-The-World-Bank.jpg" height="75px" width="75px"
+         vspace="5" hspace="5" alt="logo"/>
+    <div>
+        <h2>WORLD BANK</br>Publications</h2>
+    </div>
+</div>
+<div class="topnav">
+    <nav class="nav">
+        <a href="#">Кредитные карты</a>
+        <a class="active" href="#">Вклады</a>
+        <a href="#">Дебетовая карта</a>
+        <a href="#">Страхование</a>
+        <a href="#">Друзья</a>
+        <a href="#">Интернет-банк</a>
+    </nav>
+</div>
+<ul class="breadcrumb">
+    <li><a href="#">Главная</a></li>
+    <li><a id="bc" href="#">Вклады</a></li>
+    <li>Калькулятор</li>
+</ul>
+    <div class="calc">
+        <h1>Калькулятор </h1>
+        <div class="content">
+            <div class="input-group">
+                <label for="dp">Дата оформления вклада</label>
+                <input type="text" name="date" id="dp"/>
+            </div>
+            <div class="input-group">
+                <label for="text1">Сумма вклада</label>
+                <input type="number" name="sum_start" id="text1" value="1000"
+                       min="1000" max="3000000"/>
+                <div class="range">
+                    <input type="range" id="range1" min="1000" max="3000000"
+                           step="100" value="10000">
+                    <br/>
+                    <label for="range1" style="margin-left: 14px">1 тыс. руб.</label>
+                    <label for="range1" style="float:right; margin-right: 24px">3 000 000</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="term">Срок вклада</label>
+                <input list="list" id="term">
+                <datalist id="list">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                </datalist>
+            </div>
+            <div class="input-group">
+                <label for="rb1">Пополнение вклада</label>
+                <div>
+                    <input id="rb1" type="radio" value="Not" checked/>
+                    <label for="rb1" style="margin-left: 2px; margin-right: 20px">Нет</label>
+                    <input id="rb2" type="radio" value="Yes"/>
+                    <label for="rb2" style="margin-left: 2px; margin-right: 20px">Да</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="text2">Сумма пополнения вклада</label>
+                <input type="number" id="text2" value="1000" name="sum_add"
+                       min="1000" max="3000000"/>
+                <div class="range">
+                    <input type="range" id="range2" min="1000" max="3000000"
+                           step="100" value="10000">
+                    <br/>
+                    <label for='range2' style="margin-left: 14px">1 тыс. руб.</label>
+                    <label for='range2' style="float:right; margin-right: 24px">3 000 000</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-group2">
+            <input class="button" id="submit" type="submit" name="calc" value="Рассчитать"/>
+            <label id="res">Результат: </label>
+        </div>
+    </div>
+<footer class="footer">
+    <a href="#">Кредитные карты</a>
+    <a href="#">Вклады</a>
+    <a href="#">Дебетовая карта</a>
+    <a href="#">Страхование</a>
+    <a href="#">Друзья</a>
+    <a href="#">Интернет-банк</a>
+</footer>
+<script src="script.js"></script>
+<script>
+
+</script>
+<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+
+</body>
+</html>
